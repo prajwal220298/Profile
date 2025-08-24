@@ -1,0 +1,98 @@
+.hobbiesContainer {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.hobbiesContainer h1 {
+  margin: 20px;
+  color: #083508;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.hobbiesContainer > p {
+  text-overflow: ellipsis;
+}
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #fff;
+  color: #fff;
+  position: relative;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+  border: none;
+  width: 50px;
+  height: 3px;
+}
+
+.indicators > button.active {
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+}
+
+.carouselCard {
+  width: 900px;
+  height: 200px;
+  background-color: #f2f2f2;
+  color: black;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+  overflow: hidden;
+}
+.carouselCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 35px 35px 0;
+  border-style: solid;
+  border-color: #083508 #fff;
+}
+
+.hobbiesContainer div > span {
+  color: #083508;
+  font-size: 35px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.itemInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.itemInfo p {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+.hobbiesDescription {
+  text-align: center;
+  margin-top: 22px;
+  color: #6e6e6e;
+}

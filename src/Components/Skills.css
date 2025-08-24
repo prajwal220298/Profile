@@ -1,0 +1,159 @@
+.skillsContainer {
+  background-color: #f2f2f2;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.skillsHeading {
+  text-align: center;
+}
+.skillsHeading h1 {
+  margin: 20px;
+  color: #083508;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.skills {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #083508;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-percentage {
+  color: #fff;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-percentage::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #083508;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+}
+.skill {
+  width: 100%;
+}
+.skill-percentage::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #005a8d;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+.stripesLoader {
+  margin: 4px;
+  height: 30px;
+  position: relative;
+  background: linear-gradient(90deg, #eee 50%, transparent 50%);
+  background-color: #083508;
+  background-position: 80%;
+  border-radius: 5px;
+  transform: scale(-1);
+  transition: 0.3s;
+  animation: fillBars 2.5s 1;
+}
+
+.stripesLoader:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(
+    45deg,
+    transparent 15%,
+    rgba(238, 238, 238, 0.5) 30%,
+    rgba(238, 238, 238, 0.5) 80%,
+    transparent 80%,
+    transparent 45%,
+    rgba(238, 238, 238, 0.5) 35%,
+    rgba(238, 238, 238, 0.5) 50%,
+    transparent 15%
+  );
+
+  animation: shift 2s linear infinite;
+  background-size: 45px 100%;
+  box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0 -2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.otherSkills {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.otherSkillsColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6e6e6e;
+}
+
+.otherSkillsColumn .leftInfo {
+  text-align: right;
+  padding-left: 40px;
+}
+
+.otherSkillsColumn .rightInfo {
+  text-align: left;
+  margin-left: 55px;
+}
+
+@keyframes shift {
+  to {
+    background-position: 60px 100%;
+  }
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .skill {
+    width: 30%;
+    padding-left: 15px;
+  }
+  .otherSkillsColumn .leftInfo {
+    padding-left: 80px;
+  }
+  .otherSkillsColumn .rightInfo {
+    margin-left: 25px;
+  }
+}

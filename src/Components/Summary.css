@@ -1,0 +1,153 @@
+.summaryContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summaryHeading h1 {
+  color: #083508;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summaryContent .summaryProfileImage img {
+  border-radius: 10%;
+  object-fit: cover;
+}
+.summaryContent .summaryDescription {
+  font-size: 16px;
+  line-height: 2rem;
+  text-align: justify;
+  margin: 18px;
+  color: #6e6e6e;
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  border-radius: 1rem;
+  background: #f2f2f2;
+  position: relative;
+  margin: 24px;
+}
+.card__header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.card__header span {
+  color: #083508;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.card__body {
+  text-align: left;
+  margin: 25px;
+}
+/* .summaryIcon {
+  display: flex;
+  justify-content: center;
+}
+.summaryInfoColoumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6e6e6e;
+}
+
+.summaryInfoColoumn .leftInfo {
+  text-align: right;
+  padding-left: 20px;
+}
+
+.summaryInfoColoumn .rightInfo {
+  text-align: left;
+  border-left: 2px solid #083508;
+  margin-left: 55px;
+  padding: 10px 0 10px 10px;
+}
+.leftInfo p {
+  padding: 12px;
+}
+.rightInfo p {
+  padding: 12px;
+} */
+.summaryButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 10px;
+  padding: 10px 20px;
+}
+
+.summaryButton .btn-1,
+.summaryButton .btn-2,
+.summaryButton a {
+  width: 100%;
+  margin-bottom: 12px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.summaryButton .btn-1 {
+  color: #083508;
+  border: 2px solid #083508;
+  background-color: #fff;
+}
+
+.summaryButton .btn-2 {
+  color: #fff;
+  background-color: #083508;
+  border: 2px solid #083508;
+}
+
+/* .socialMediaIcons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+} */
+
+@media screen and (min-width: 800px) {
+  .summaryContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 50px;
+  }
+  /* .socialMediaIcons {
+    margin: 0 auto;
+    width: 20%;
+    justify-content: space-around;
+  } */
+  .summaryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .summaryButton .btn-1,
+  .summaryButton .btn-2 {
+    width: 180px;
+    height: 60px;
+    margin: 0 30px;
+  }
+  .summaryButton a {
+    width: 250px;
+    height: 45px;
+  }
+}
